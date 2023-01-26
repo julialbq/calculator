@@ -5,39 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./global.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <section>
+    <header>
         <h1>Calculator</h1>
-        <div>
-            <p class="display"></p>
-            <button onclick="cleanDisplay()">C</button>
+    </header>
+    <section class="container">
+        <div class="screen">
+            <div>
+                <p class="display"></p>
+            </div>
+            <button class="button clean" onclick="cleanDisplay()">C</button>
         </div>
         <div class="buttons">
-            <div>
-                <button class="number" onclick="displayValue('7')">7</button>
-                <button class="number" onclick="displayValue('8')">8</button>
-                <button class="number" onclick="displayValue('9')">9</button>
-                <button class="operation" onclick="displayValue('÷')">÷</button>
-            </div>
-            <div>
-                <button class="number" onclick="displayValue('4')">4</button>
-                <button class="number" onclick="displayValue('5')">5</button>
-                <button class="number" onclick="displayValue('6')">6</button>
-                <button class="operation" onclick="displayValue('*')">*</button>
-            </div>    
-            <div>
-                <button class="number" onclick="displayValue('1')">1</button>
-                <button class="number" onclick="displayValue('2')">2</button>
-                <button class="number" onclick="displayValue('3')">3</button>
-                <button class="operation" onclick="displayValue('-')">-</button>
-            </div>   
-            <div>
-                <button class="number" onclick="displayValue('0')">0</button>
-                <button class="number" onclick="displayValue('.')">.</button>
-                <button class="operation" onclick="displayValue('+')">+</button>
-                <button class="equal" onclick="displayResult()">=</button>
-            </div>  
+                <button class="button number" onclick="displayValue('7')">7</button>
+                <button class="button number" onclick="displayValue('8')">8</button>
+                <button class="button number" onclick="displayValue('9')">9</button>
+                <button class="button operation" onclick="displayValue('÷')">÷</button>
+                <button class="button umber" onclick="displayValue('4')">4</button>
+                <button class="button number" onclick="displayValue('5')">5</button>
+                <button class="button number" onclick="displayValue('6')">6</button>
+                <button class="button operation" onclick="displayValue('*')">*</button>    
+                <button class="button number" onclick="displayValue('1')">1</button>
+                <button class="button number" onclick="displayValue('2')">2</button>
+                <button class="button number" onclick="displayValue('3')">3</button>
+                <button class="button operation" onclick="displayValue('-')">-</button>   
+                <button class="button number" onclick="displayValue('0')">0</button>
+                <button class="button number" onclick="displayValue('.')">.</button>
+                <button class="button operation" onclick="displayValue('+')">+</button>
+                <button class="button equal" onclick="displayResult()">=</button>  
         </div>
     </section>
     <script src="./index.js"></script>
