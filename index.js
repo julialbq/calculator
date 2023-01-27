@@ -1,4 +1,4 @@
-const display = document.querySelector('.display')
+const display = document.getElementById('display')
 let newEntry = true
 const operators = ['+', '-', '*', '/']
 
@@ -34,9 +34,9 @@ function displayResult() {
   let operation = display.innerText
   let result = eval(operation)
 
-  let correctDecimals = countDecimals(result)
+  let decimalPlaces = countDecimals(result)
 
-  if(correctDecimals >= 10){
+  if(decimalPlaces >= 10){
     display.innerText = result.toFixed(9)
   } else {
     display.innerText = result
